@@ -1,0 +1,106 @@
+@font-face {
+  font-family: FrederickaTheGreat;
+  src: url("./FrederickatheGreat-Regular.ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("./OpenSans-Medium.ttf");
+}
+
+html {
+  font-family: OpenSans;
+  background-color: white;
+  color: white;
+}
+
+header {
+  background-image: url(../assets/leafBackground.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+header div {
+  font-family: "FrederickaTheGreat";
+  font-size: 40px;
+}
+header div p {
+  padding-left: 115px;
+  padding-top: 20px;
+  margin: 0px; /* nicht entfernen, beseitigt den weißen balken oben!!!! */
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "FrederickaTheGreat";
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "FrederickaTheGreat";
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  left: 115px;
+  top: 652px;
+  padding: 20px;
+}
+
+nav ul li {
+  padding-top: 5px;
+}
+
+button {
+  background: none;
+  border: solid white 2px;
+  color: white;
+  padding: 11px 31px 11px 31px;
+}
+
+header section {
+  text-align: center;
+  width: 500px;
+  height: 811px;
+  margin: auto;
+  padding-top: 150px;
+}
+
+main section {
+  text-align: center;
+  width: 500px;
+  min-height: fit-content;
+  margin: auto;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+main section div {
+  border: solid black 5px;
+  text-align: center;
+
+  width: 210px;
+  padding: 5px;
+  margin: auto;
+}
+
+footer {
+  background-color: rgb(59, 59, 61);
+  padding: 50px;
+}
+
+footer section div {
+  width: 500px;
+}

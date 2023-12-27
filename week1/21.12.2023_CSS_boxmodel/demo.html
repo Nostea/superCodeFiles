@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="./assets/style_index.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <article>
+        <h2>Wiederholung:</h2>
+        <h3>Block Elemente:</h3>
+        <ul>
+          <li>p</li>
+          <li>ol,ul</li>
+          <li>div</li>
+          <li>h1-h6</li>
+          <li>article</li>
+        </ul>
+        <h3>Inline elemente</h3>
+        <ul>
+          <li>a</li>
+          <li>button</li>
+          <li>span</li>
+        </ul>
+        <h3>CSS einbinden</h3>
+        <ul>
+          <li>extern: mit link:css</li>
+          <li><p style="color: aqua">ich bin inline gestyled</p></li>
+        </ul>
+        <h3>pseudo selektoren:</h3>
+        <ul>
+          <li><h5>lila</h5></li>
+          <li><h5>grün</h5></li>
+          <li><h5>orange</h5></li>
+        </ul>
+      </article>
+      <hr />
+      <!-- Box Model-->
+      <article>
+        <h3>box model</h3>
+        <p>beschreibt wie sick block elemente verhalten</p>
+        <p>der platzbedarf errechnet sich aus:</p>
+        <ol>
+          <li>width/height (Content-Box)</li>
+          <li>padding box</li>
+          <li>border (border Box)</li>
+          <li>Margin (Marginbox)</li>
+        </ol>
+      </article>
+
+      <h4>box sizing property</h4>
+      <p>hilft uns box model zu manipulieren</p>
+      <p>box-sizinng:content-box => default wert, boxen werden auf addiert</p>
+      <p>
+        box-sizing:border-box => breite wird automatisch mit border verrechnet
+      </p>
+
+      <section>
+        <div>ich bin das div</div>
+      </section>
+    </main>
+    <footer>
+      <h3>margin und padding</h3>
+      <div>
+        <h1>margin</h1>
+        <p>ist der außenabstand</p>
+      </div>
+      <div>
+        <h1>padding</h1>
+        <p>ist der innenabstand</p>
+      </div>
+      <article>
+        <h2>display property:inline, block, inline-block</h2>
+        <p>inline: elemente können höhe und breite annehmen</p>
+        <p>block: nehmen 100% der breite ein</p>
+        <p>
+          inline-block: kombiniert das beste von beidem, man hat nicht immer
+          100% breite & mann kann trotzdem höhe und breite vergeben
+        </p>
+        <section>
+          <p>bin tag nr 1</p>
+          <p>bin tag nr 2</p>
+          <p>bin tag nr 3</p>
+          <p>bin tag nr 4</p>
+        </section>
+      </article>
+    </footer>
+  </body>
+</html>

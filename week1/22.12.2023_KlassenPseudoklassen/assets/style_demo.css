@@ -1,0 +1,92 @@
+/* # mit dem globalen selektor * werden alle styles entfernt, 
+der balken vom body wird auch entfernt
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+/* ? mit dem first-letter kann man den ersten buchstaben stylen */
+section p::first-letter {
+  font-size: 40px;
+  background-color: red;
+}
+
+section p::first-line {
+  background-color: blue;
+  color: white;
+}
+
+/* ? ::marker ist explizit für listen bulletpoints/nummern austauschen gedacht */
+article li::marker {
+  content: "🩷 -";
+}
+
+/* wenn man mit der maus einen textabschnitt markiert wird dieses styling angewendet
+ der sternselektor damit überall auf der website mit dem gleichen style ausgewählt wird */
+*::selection {
+  background-color: yellow;
+  color: red;
+}
+
+/* # kleine dekorative elemente nach titel wie zB der pfeil für dropdown menüs bei kalender
+# der content:" ich bin ein after" erscheint nicht im DOM HTML dokumen, nur auf css ebene sichtbar*/
+
+article h4:nth-of-type(1)::after {
+  content: " - Ich bin After";
+  font-size: 20px;
+  color: blue;
+}
+
+article h4:nth-of-type(1)::before {
+  content: " Ich bin before 🤓";
+  font-size: 20px;
+  color: blueviolet;
+}
+
+/* ?  der cZustand wenn man mit maus über das element mit maus hovert*/
+article h4:nth-of-type(1):hover {
+  background-color: red;
+}
+
+/* ? :active = Der Zustand wenn man auf das element klickt */
+article h4:nth-of-type(1):active {
+  background-color: green;
+}
+
+article a {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+article a:hover {
+  background-color: aqua;
+}
+
+article a:active {
+  background-color: darkslategray;
+}
+/* ! Class & ID */
+
+.button {
+  font-size: 40px;
+}
+
+/* ! Class VS ID */
+
+/* ? Class werden mit . am anfang angesprochen */
+/* ? IDs werden mit # am anfang angesprochen */
+
+/* * IDs sind von der spezifität stärker als klassen */
+.class-bsp {
+  background-color: darkblue;
+}
+
+#id-bsp {
+  background-color: crimson;
+}

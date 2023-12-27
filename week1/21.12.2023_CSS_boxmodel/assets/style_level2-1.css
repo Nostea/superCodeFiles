@@ -1,0 +1,50 @@
+h1 {
+  border-radius: 10px;
+  border-style: dashed;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 35px;
+  color: black;
+}
+
+h2 {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgb(175, 175, 175);
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 2px rgb(183, 183, 183);
+}
+
+h3 {
+  border-radius: 10px;
+  border-style: double;
+  border-width: thick;
+  border-color: chartreuse;
+  text-align: center;
+  max-width: fit-content;
+  padding: 10px;
+  margin: auto;
+}
+
+section p {
+  border-style: solid;
+  border-color: orange;
+  color: magenta;
+  padding: 20px;
+  margin: 20px;
+}
+
+p:hover::first-letter {
+  color: red;
+  font-size: 35px;
+}
+
+ul,
+ol {
+  border: solid rgb(145, 195, 69);
+  margin: 10px 60px 10px 60px;
+  text-decoration: underline chartreuse;
+  padding: 20px 20px 20px 20px;
+}

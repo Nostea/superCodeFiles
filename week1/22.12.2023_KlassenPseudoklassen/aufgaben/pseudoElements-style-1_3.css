@@ -1,0 +1,79 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-position: inside;
+}
+
+h1::first-letter {
+  font-size: 3em;
+}
+
+ul li:nth-of-type(1) {
+  text-decoration: line-through;
+}
+ul li:nth-of-type(2) {
+  text-decoration: line-through;
+}
+
+ul li:nth-of-type(3):hover {
+  background-color: aquamarine;
+}
+ul li:nth-of-type(4):hover {
+  background-color: aquamarine;
+}
+
+ul li:nth-of-type(5) {
+  text-decoration: underline;
+}
+ul li:nth-of-type(6) {
+  text-decoration: underline;
+}
+
+h1:hover::first-letter {
+  color: #4fc3f7;
+}
+
+ul li:nth-of-type(1)::before {
+  content: "✅ ";
+}
+
+ul li:nth-of-type(1)::after {
+  content: " ⚽️";
+}
+
+ul li:nth-of-type(2):before {
+  content: "✅ ";
+}
+
+ul li:nth-of-type(2)::after {
+  content: " 💵";
+}
+
+ul li:nth-of-type(3)::before {
+  content: "🔨 ";
+}
+
+ul li:nth-of-type(3)::after {
+  content: " 🚶‍♂️";
+}
+
+ul li:nth-of-type(4)::before {
+  content: "🔨 ";
+}
+ul li:nth-of-type(4)::after {
+  content: " 🥚";
+}
+ul li:nth-of-type(5)::before {
+  content: "❌ ";
+}
+ul li:nth-of-type(5)::after {
+  content: " 📚";
+}
+ul li:nth-of-type(6)::before {
+  content: "❌ ";
+}
+ul li:nth-of-type(6)::after {
+  content: " 🗄️";
+}

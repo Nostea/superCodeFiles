@@ -1,0 +1,12 @@
+section {
+  background-image: url("./assets/fence.avif");
+  background-position: left;
+  background-repeat: repeat-x;
+}
+
+article {
+  background-image: url("./assets/windowimg.avif");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

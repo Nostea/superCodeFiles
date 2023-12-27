@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  /*
+  margin: 0;
+  padding: 0; 
+  */
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+h3::first-letter {
+  font-size: 30px;
+  color: #2e8b57;
+}
+
+h3:hover {
+  color: #00ced1;
+  font-size: 30px;
+}
+
+ul li:nth-of-type(1):first-letter {
+  color: #00ced1;
+  font-size: 30px;
+  text-decoration: overline;
+}
+
+ul li:nth-of-type(2):first-letter {
+  color: #f03120;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+ul li:nth-of-type(3):first-letter {
+  color: greenyellow;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+ul li:nth-of-type(3) {
+  text-decoration: line-through;
+}
+
+section article p:nth-of-type(1) {
+  color: gray;
+}
+
+section article p {
+  text-indent: 50px;
+}
+
+section article p:nth-of-type(1):first-line {
+  font-size: 20px;
+}
+
+section div p:nth-of-type(1)::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+section div p:nth-of-type(1)::first-line {
+  color: green;
+
+  text-indent: 0;
+}
+
+section div p:nth-of-type(1):hover::first-line {
+  color: blue;
+
+  text-indent: 0;
+}
+
+section div p::first-letter {
+  font-size: 40px;
+  color: red;
+}
+section div p {
+  font-size: 20px;
+}
+
+section p::first-letter {
+  color: red;
+  font-size: 30px;
+}
+section p::first-line {
+  color: green;
+}
+
+section p:hover::first-line {
+  color: blue;
+}
+
+section p {
+  font-size: 15px;
+}

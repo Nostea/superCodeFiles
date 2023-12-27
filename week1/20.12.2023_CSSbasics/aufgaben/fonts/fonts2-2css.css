@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+/* font family ändern */
+
+h1 {
+  background-color: greenyellow;
+  text-align: center;
+}
+
+em {
+  text-shadow: red 2px -2px;
+  font-weight: 600;
+}
+
+strong {
+  /* font family ändern */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  /* font family ändern */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}

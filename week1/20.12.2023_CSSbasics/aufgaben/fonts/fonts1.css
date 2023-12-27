@@ -1,0 +1,27 @@
+h3 {
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: gray;
+  color: white;
+}
+
+ul li {
+  padding: 0.5rem;
+}
+
+ul li:nth-child(1) {
+  text-decoration: overline;
+  color: gray;
+}
+
+ul li:nth-child(2) {
+  text-decoration: line-through;
+  color: gray;
+  text-align: center;
+}
+
+ul li:last-child {
+  color: gray;
+  text-decoration: underline;
+  text-align: right;
+}

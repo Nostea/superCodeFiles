@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  background-color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: green;
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+dt {
+  color: dodgerblue;
+}
+
+dd {
+  color: rgb(129, 129, 129);
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  background-color: rgb(184, 226, 227);
+}
