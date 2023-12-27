@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+section {
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid orange;
+}
+
+::selection {
+  text-decoration: underline;
+  color: orange;
+}
+
+p::before {
+  content: "Info";
+  background-color: orchid;
+  font-weight: 600;
+}
+
+p::after {
+  content: "\2665";
+  color: orange;
+}
