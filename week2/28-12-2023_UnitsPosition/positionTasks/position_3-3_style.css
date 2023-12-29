@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #7b8ce4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 62.5%;
+}
+
+header {
+  font-size: 1.6rem;
+}
+
+.logo {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+header nav ul {
+  text-align: right;
+  padding: 1.6rem 1.6rem 0 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  text-align: right;
+  padding: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.button1 {
+  background-color: white;
+  border-radius: 3rem;
+  color: #3f414e;
+  text-transform: uppercase;
+  width: 70rem;
+  padding: 1.3rem 3rem 1.3rem 3rem;
+}
+
+header section {
+  width: 100vw;
+  position: absolute;
+  top: 30vh;
+  left: 0;
+}
+
+header section p {
+  margin-bottom: 3.2rem;
+}
+
+h1 {
+  color: #ffeccc;
+  font-weight: bold;
+  font-size: 2.4rem;
+  width: 14rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.illustration {
+  position: absolute;
+  width: 50vw;
+  left: 60vw;
+  top: 0;
+}
+
+.welcomeArea {
+  position: absolute;
+  width: 50vw;
+  left: 0;
+  top: 50%;
+  text-align: center;
+}
+
+.welcomeArea div {
+  position: absolute;
+
+  left: 15%;
+  margin-top: 15%;
+}

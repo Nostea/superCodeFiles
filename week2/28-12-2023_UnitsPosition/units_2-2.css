@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+html {
+  background-image: url("./assets/backgroundIMG.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  background-color: rgba(88, 88, 88, 0.5);
+  text-align: center;
+  padding: 30px;
+  width: 60vh;
+  margin: 30vh auto 0 auto;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+}
