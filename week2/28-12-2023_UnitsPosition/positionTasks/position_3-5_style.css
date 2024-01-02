@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Montserrat;
+}
+
+header {
+  background-image: url(../assets/img/bikeBG.png);
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  margin-bottom: 20vh;
+  font-size: 2rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+nav ul {
+  background-color: rgba(28, 28, 28, 0.5);
+  padding: 1.6rem 0rem 1.6rem 0rem;
+  margin-top: 20vh;
+  position: absolute;
+  width: 100vw;
+  top: 60vh;
+  left: 0%;
+  text-align: right;
+}
+
+.logo {
+  font-size: 3.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  padding-left: 5rem;
+  color: white;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  display: inline;
+  padding-right: 10rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.9rem;
+}
+
+section {
+  color: black;
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+}
+
+section h1 {
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.locationImg {
+  padding: 3.6rem 4rem 2rem 0rem;
+}
+
+.tourDates {
+  position: absolute;
+  top: 200vh;
+  left: 0;
+}
+
+.tourDates h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 4.3rem;
+}
+
+.tourDates ul li {
+  font-size: 1.6rem;
+  color: gray;
+  list-style-type: none;
+  padding-left: 15rem;
+  margin-bottom: 1.6rem;
+}
