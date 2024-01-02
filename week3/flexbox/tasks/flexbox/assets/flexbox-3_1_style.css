@@ -1,0 +1,379 @@
+@font-face {
+  font-family: Raleway;
+  src: url(../assets/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Raleway;
+  color: #8c979e;
+}
+
+header {
+  background-image: url(../assets/shapelyBG.png);
+  background-size: cover;
+
+  height: 100vh;
+}
+
+nav {
+  background-color: white;
+  height: 7vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #666666;
+  font-weight: lighter;
+  font-size: 2.4rem;
+  text-decoration: none;
+  margin-left: 12vw;
+}
+
+.navigation {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  margin-right: 19rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4c4c4c;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+
+  padding-right: 3rem;
+}
+
+.navigation a:hover {
+  color: #745cf9;
+}
+
+/* ! header content text */
+.headerContent {
+  color: white;
+}
+
+.headerContent h1 {
+  color: white;
+  font-size: 6rem;
+  line-height: 6.4rem;
+  font-weight: lighter;
+  text-align: center;
+
+  margin-top: 39rem;
+  margin-bottom: 2.5rem;
+}
+
+.headerContent p {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  padding-bottom: 3.6rem;
+}
+
+/* # super hacky margin.... */
+.button_solid_landing {
+  margin-left: 34vw;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-color: #745cf9;
+  padding: 1.5rem 6rem 1.5rem 6rem;
+  margin-right: 1rem;
+}
+
+.button_frame {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+
+  border: 0.1rem solid white;
+  color: white;
+  background: none;
+  padding: 1.5rem 6rem 1.5rem 6rem;
+}
+
+.button_frame:hover {
+  transition-duration: 10ms;
+  background-color: white;
+  color: #0e1015;
+}
+
+/* !    SEO Friendly Section    */
+
+.button_solid {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-color: #745cf9;
+  padding: 1.5rem 6rem 1.5rem 6rem;
+}
+
+.button_solid:hover {
+  background-color: #533eca;
+  transition: ease-in;
+}
+
+.whiteSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60vh;
+
+  /* padding: 9.6rem 0 9.6rem 0; */
+
+  gap: 12.8rem;
+  font-size: 1.4rem;
+}
+
+.whiteSection h2 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #0e1015;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+}
+
+.whiteSection p {
+  padding-bottom: 3.6rem;
+  text-align: left;
+  width: 30vw;
+}
+
+/* ! Portfolio Section (gray) */
+
+.graySection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f5f5;
+
+  gap: 12.8rem;
+  padding: 9.6rem 0 9.6rem 0;
+
+  font-size: 1.4rem;
+}
+
+.graySection h2 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #0e1015;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+}
+
+.graySection p {
+  padding-bottom: 3.6rem;
+  text-align: left;
+  width: 30vw;
+}
+
+/* ! Parallax Section */
+
+.parallaxSection {
+  background-image: url(../assets/parallaxBG.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 40vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.parallaxSection h2 {
+  color: white;
+  font-size: 6rem;
+  line-height: 6.4rem;
+  font-weight: lighter;
+  padding-bottom: 2.6rem;
+}
+
+.parallaxContent {
+  color: white;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding-bottom: 3.6rem;
+  text-align: center;
+
+  width: 60vw;
+}
+
+.limitlessSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.limitlessSection h2 {
+  text-align: center;
+  margin-top: 9.6rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #0e1015;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+}
+
+.limitlessSection p {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  width: 70vw;
+
+  padding-bottom: 3.6rem;
+}
+
+.limitlessSection img {
+  margin-top: 3.6rem;
+}
+
+/* ! latest projects section */
+
+.latestProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding-bottom: 3.6rem;
+}
+
+.latestProjects h2 {
+  text-align: center;
+  margin-top: 9.6rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+  margin-top: 9.5rem;
+}
+
+.latestProjects p {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  width: 70vw;
+
+  padding-bottom: 4rem;
+}
+
+.gallery img {
+  width: 386px;
+  height: 275px;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #0e1015;
+
+  margin-top: 25rem;
+  gap: 6rem;
+}
+
+.clients h2 {
+  text-align: center;
+  margin-top: 9.6rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+  margin-top: 3rem;
+}
+
+.clientsReel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  gap: 20rem;
+  padding-bottom: 20rem;
+}
+
+.themeReferral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  background-color: #f5f5f5;
+
+  gap: 10rem;
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.themeReferral h2 {
+  color: #0e1015;
+  text-align: center;
+  margin-top: 9.6rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: lighter;
+  margin-bottom: 2.6rem;
+  margin-top: 3rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 9.1rem 0 9.1rem 18.6rem;
+
+  background-color: #0e1015;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: white;
+}
