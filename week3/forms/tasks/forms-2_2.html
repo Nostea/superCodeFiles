@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./forms-2_2_style.css" />
     <title>Forms 2-2</title>
-</head>
-<body>
-    <form></form>
-</body>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Authentication</legend>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email" />
+        <label for="password">password:</label>
+        <input
+          type="password"
+          id="password"
+          maxlength="20"
+          placeholder="password"
+        />
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </form>
+    </fieldset>
+  </body>
 </html>
