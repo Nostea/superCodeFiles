@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Clicker Script;
+  src: url(../coffeeDesign/assets/ClickerScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url(../coffeeDesign/assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: #707070;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  font-size: 5.4rem;
+  padding-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h2,
+h3 {
+  color: #603809;
+}
+
+h1 {
+  font-size: 22rem;
+  font-family: Clicker Script;
+  color: white;
+}
+
+/* ! Nav Bar */
+
+header {
+  background-image: url(../coffeeDesign/assets/img/coffee_BG.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3rem 1.6rem 3rem;
+
+  height: 7vh;
+  font-size: 1.4rem;
+  font-family: Playfair Display;
+  margin-bottom: 11.6rem;
+}
+
+.logo a,
+.navbar li a,
+.signup a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Clicker Script;
+  font-size: 3.5rem;
+  padding-left: 6.3rem;
+
+  gap: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+  gap: 6rem;
+}
+
+.navbar li {
+  display: inline;
+}
+
+header {
+  padding-bottom: 9.5rem;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1.5rem;
+}
+
+.button {
+  background-color: #f9c06a;
+  font-size: 1.6rem;
+  border-radius: 3.6rem;
+  color: #1e1e1e;
+  font-family: Playfair Display;
+  text-align: center;
+  text-decoration: none;
+
+  width: 15rem;
+
+  padding: 1.6rem;
+}
+
+.landingSection {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding-left: 9.3rem;
+}
+
+.landingSection p {
+  color: white;
+}
+
+.landingSection p:nth-of-type(2) {
+  padding-bottom: 2rem;
+}
+
+.discover {
+  display: flex;
+  justify-content: center;
+  gap: 9.5rem;
+  padding: 5.8rem 8rem 5.8rem 8rem;
+}
+
+.discover div:first-of-type {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
+  width: 58.5rem;
+}
+
+.perkShowcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.highlightedPerk {
+  background-color: #ffeed8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 280px;
+  height: 300px;
+
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.highlightedPerk p,
+.perk p {
+  text-align: center;
+}
+
+.perk {
+  background-color: #fff9f1;
+  border: 1px solid #f9c06a;
+
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 280px;
+  height: 300px;
+
+  padding: 3rem;
+}
+
+.perk p .highlightedPerk p {
+  line-height: 2rem;
+}
+
+.perk h3 .highlightedPerk h3 {
+  padding-bottom: 0.8rem;
+}

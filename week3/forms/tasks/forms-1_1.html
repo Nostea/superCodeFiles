@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./forms-1_1-style.css" />
+  </head>
+  <body>
+    <form>
+      <label for="name">Name</label>
+      <div>
+        <input
+          type="text"
+          id="vorname"
+          placeholder="Vorname"
+          required
+          class="growBox"
+        />
+        <input
+          type="text"
+          id="nachname"
+          placeholder="Nachname"
+          required
+          class="growBox"
+        />
+      </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="thema">Thema:</label>
+      <select id="thema" required>
+        <option value="genreral">General</option>
+        <option value="advertise">Advertise</option>
+        <option value="partnership">Partnership</option>
+        <option value="advertise">Advertise</option>
+      </select>
+      <input type="submit" value="Submit" class="submitButton" />
+    </form>
+  </body>
+</html>

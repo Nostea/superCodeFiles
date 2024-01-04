@@ -1,0 +1,65 @@
+.order {
+  background-color: gray;
+
+  display: flex;
+  gap: 5px;
+}
+
+.order article {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+}
+
+.order article:nth-of-type(1) {
+  order: 2;
+}
+
+.order article:nth-of-type(2) {
+  order: 3;
+}
+
+.order article:nth-of-type(3) {
+  order: 0;
+}
+
+.order article:nth-of-type(4) {
+  order: 1;
+}
+
+/* ! align */
+
+.align {
+  height: 250px;
+  background-color: lightgoldenrodyellow;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.align article {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.align article:nth-of-type(1) {
+  background-color: blue;
+  align-self: flex-end;
+}
+
+.align article:nth-of-type(2) {
+  background-color: red;
+  align-self: flex-start;
+}
+
+.align article:nth-of-type(3) {
+  background-color: green;
+}
+
+.align article:nth-of-type(4) {
+  background-color: aqua;
+  align-self: flex-start;
+}

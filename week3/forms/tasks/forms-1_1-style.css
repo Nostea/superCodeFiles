@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  font-size: 2rem;
+
+  width: 60rem;
+
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 3rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+
+.growBox {
+  flex-grow: 1;
+}
+
+label {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+select {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.submitButton {
+  color: white;
+  background-color: cornflowerblue;
+  font-size: 2rem;
+  width: 100%;
+  border-style: none;
+  padding: 1rem;
+}
