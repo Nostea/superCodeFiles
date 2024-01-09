@@ -1,0 +1,16 @@
+.greyContainer {
+  background-color: rgb(211, 211, 211);
+  width: 100vw;
+  height: 10vh;
+}
+
+.redLoading {
+  background-color: red;
+  transition: ease-in-out 1s;
+  width: 10%;
+  height: 50%;
+}
+
+.redLoading:hover {
+  width: 100%;
+}

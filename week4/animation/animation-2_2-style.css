@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(255, 248, 239);
+  margin: 10px;
+}
+
+.circle {
+  animation: moveCircle 3s infinite;
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.circle:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes moveCircle {
+  0%,
+  100% {
+    transform: translate(0);
+    background-color: red;
+  }
+
+  25% {
+    transform: translateX(400px);
+    background-color: yellow;
+  }
+
+  50% {
+    transform: translateY(400px) translateX(400px);
+    background-color: greenyellow;
+  }
+
+  75% {
+    transform: translateY(400px) translateX(0);
+    background-color: blue;
+  }
+}

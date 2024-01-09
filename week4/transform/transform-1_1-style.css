@@ -1,0 +1,24 @@
+.square {
+  background-color: red;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  transform-origin: bottom left;
+  transition: all 1s;
+}
+
+.square:hover {
+  transform: rotate(90deg) scale(1.7);
+}
+
+/*
+@keyframes rotate-origin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: top left;
+  }
+  to {
+    transform: rotate(90deg), scale(2), forwards;
+  }
+}
+*/
