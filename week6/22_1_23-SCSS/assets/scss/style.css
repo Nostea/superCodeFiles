@@ -1,0 +1,160 @@
+/* CSS */
+/*
+
+section header h2 {
+  background-color: aqua;
+}
+
+*/
+/* SASS */
+/*
+section 
+    header 
+        h2 {
+            background-color: aqua;
+}
+*/
+/* SCSS */
+/* 
+@import -> alte schreibweise, wird in der zukunft deaktiviert
+*/
+section header h2 {
+  background-color: aqua;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+section header {
+  margin-bottom: 2.5rem;
+}
+section header div h1 {
+  text-align: center;
+  color: aqua;
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+  background-color: blue;
+  text-decoration: underline;
+}
+section header div h2 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Verdana";
+  /* das obere ist das equivalent von der unteren, nur mit mixin gearbeitet 
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  */
+}
+section header nav {
+  background-color: blue;
+}
+section header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section header nav ul li {
+  list-style-type: none;
+  /*
+  .link-basic {
+    text-decoration: none;
+    padding: variables.$spacing;
+    &:hover {
+      transition: 1s;
+      color: variables.$hover-color;
+    }
+  }
+  */
+}
+
+.link-basic, footer ul li .footer-link {
+  text-decoration: none;
+  padding: 1rem;
+}
+.link-basic:hover, footer ul li .footer-link:hover {
+  transition: 1s;
+  color: orange;
+}
+
+.middle-sec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.middle-sec .text-container h3 {
+  text-align: center;
+  color: black;
+  font-size: 1.1rem;
+  font-family: "Verdana";
+}
+.middle-sec .text-container p {
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+  font-family: "Verdana";
+}
+.middle-sec .img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.middle-sec .img-container img {
+  height: 12rem;
+  width: 17rem;
+  padding: 1rem;
+}
+
+.bottom-sec {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.bottom-sec .first-block,
+.bottom-sec .second-block,
+.bottom-sec .third-block,
+.bottom-sec .fourth-block {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 5px solid blue;
+}
+
+footer {
+  height: 300px;
+  margin-top: 1rem;
+  background-color: cornflowerblue;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+footer ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+footer ul li .footer-link {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

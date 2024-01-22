@@ -1,0 +1,158 @@
+/* CSS */
+
+/*
+
+section header h2 {
+  background-color: aqua;
+}
+
+*/
+
+/* SASS */
+/*
+section 
+    header 
+        h2 {
+            background-color: aqua;
+}
+*/
+
+/* SCSS */
+
+@use "mixin";
+@use "variables";
+
+/* 
+@import -> alte schreibweise, wird in der zukunft deaktiviert
+*/
+
+section {
+  header {
+    h2 {
+      background-color: variables.$text-color;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  header {
+    margin-bottom: 2.5rem;
+    div {
+      h1 {
+        text-align: center;
+        color: variables.$text-color;
+        font-size: 1.8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: variables.$spacing;
+        background-color: variables.$bck-color;
+        text-decoration: underline;
+      }
+
+      h2 {
+        @include mixin.text(center, black, 1.5rem, "Verdana");
+        /* das obere ist das equivalent von der unteren, nur mit mixin gearbeitet 
+        text-align: center;
+        color: black;
+        font-size: 1.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        */
+      }
+    }
+    nav {
+      background-color: variables.$bck-color;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+          /*
+          .link-basic {
+            text-decoration: none;
+            padding: variables.$spacing;
+            &:hover {
+              transition: 1s;
+              color: variables.$hover-color;
+            }
+          }
+          */
+        }
+      }
+    }
+  }
+}
+
+.link-basic {
+  text-decoration: none;
+  padding: variables.$spacing;
+  &:hover {
+    transition: 1s;
+    color: variables.$hover-color;
+  }
+}
+
+.middle-sec {
+  @include mixin.flex(flex, column, nowrap, center, center);
+  .text-container {
+    h3 {
+      @include mixin.text(center, black, 1.1rem, "Verdana");
+    }
+    p {
+      @include mixin.text(center, black, 0.8rem, "Verdana");
+    }
+  }
+
+  .img-container {
+    @include mixin.flex(flex, row, wrap, center, center);
+    img {
+      height: 12rem;
+      width: 17rem;
+      padding: variables.$spacing;
+    }
+  }
+}
+
+.bottom-sec {
+  @include mixin.flex(flex, row, wrap, center, center);
+  margin: variables.$spacing;
+  .first-block,
+  .second-block,
+  .third-block,
+  .fourth-block {
+    padding: variables.$spacing;
+    margin-bottom: variables.$spacing;
+    border: 5px solid blue;
+  }
+}
+
+footer {
+  height: 300px;
+  margin-top: variables.$spacing;
+  background-color: variables.$bck-nav;
+
+  ul {
+    @include mixin.flex(flex, row, nowrap, center, center);
+    margin: variables.$spacing;
+    li {
+      list-style-type: none;
+      padding: variables.$spacing;
+
+      .footer-link {
+        @extend .link-basic;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
