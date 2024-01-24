@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Git Cheat Sheet</h1>
+      <article>
+        <h2>Was ist Git?</h2>
+        <ul>
+          <li>
+            Git ist ein Versionskontrollsystem. Daten auf dem Rechner werden
+            getrackt und im git gespeichert.
+          </li>
+          <li>Tracking von Veränderungen & Dateiversionen</li>
+          <li>
+            Kollaboration mit mehreren Teilnehmern möglich durch arbeiten in
+            Branches & Merge requests
+          </li>
+        </ul>
+      </article>
+      <section class="grid-container">
+        <article>
+          <h2>Basics</h2>
+          <p><code>git init</code>: Erstelle leere Git Repo</p>
+          <p><code>git clone [url]</code>: Klone einre Remote Repo</p>
+          <p>
+            <code>git add .[file]</code>: Dateien zum Staging für den Commit
+            hinzufügen
+          </p>
+          <p>
+            <code>git commit -m “Kommentar”</code>: Committed alle vorgemerkten
+            Dateien aus dem Staging mit Kommentar
+          </p>
+          <p><code>git push</code>: Pushe die Veränderungen zum Git</p>
+          <p>
+            <code>git log --oneline</code>: Zeigt alle Commits der aktuellen
+            Branch (komprimiert)
+          </p>
+          <p><code>git status</code>: Zeige alle geänderten Dateien</p>
+        </article>
+        <article>
+          <h2>Branch</h2>
+          <p><code>git branch</code>: Übersicht aller Branches</p>
+          <p><code>git branch branchname</code>: Neuen Branch erstellen</p>
+          <p>
+            <code>git checkout branchname</code>: Wechsel zu einem anderen
+            Branch & ins aktive Directory einchecken
+          </p>
+          <p>
+            <code>git checkout -b branchname</code>: Neuer Branch und direkt
+            hinwechseln
+          </p>
+          <p><code>git branch -d branchname</code>: Branch löschen</p>
+        </article>
+        <article>
+          <h2>Merge</h2>
+          <ol>
+            <li>Wechsel zur Main Branch</li>
+            <li>
+              <code>git merge branchname</code>: Vom Hauptbranch aus 2 Branches
+              mergen
+            </li>
+            <li>Änderungen Pushen</li>
+            <li>
+              <code>git branch -d branchname</code> : gemergten branch danach
+              löschen
+            </li>
+            <li>Pushen nach dem Löschen</li>
+          </ol>
+        </article>
+        <article>
+          <h2>Code zurücksetzen</h2>
+          <ol>
+            <li>
+              <code>git log --oneline</code>: ID der commits identifizieren wo
+              man zurückwill
+            </li>
+            <li>
+              <code>git checkout [commit_ID] .</code>: Zurücksetzen auf den
+              alten Stand mit commit ID
+            </li>
+            <li><code>git add .</code></li>
+            <li>
+              <code
+                >git commit -m "Kommentar, auf den alten stand
+                zurückgesetzt"</code
+              >
+            </li>
+            <li><code>git push</code></li>
+          </ol>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
