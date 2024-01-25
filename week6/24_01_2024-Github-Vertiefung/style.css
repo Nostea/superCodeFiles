@@ -13,7 +13,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(./geoBackground.svg);
+  background-position: top right;
+  background-size: cover;
+  /*
   background-color: rgba(69, 201, 131, 0.158);
+  */
   min-height: 100vh;
   padding: 4vh 10vw;
 }
