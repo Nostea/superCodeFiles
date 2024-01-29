@@ -9,7 +9,11 @@ Ablauf eines Merges (Zusammenführung zweier branches.)
 
 git checkout main -> Wechselt zum main branch (Davor muss man sich auf den main branch befinden)
 git merge BurgerMenu -> Versucht den main Branch mit den BurgerMenu Branch zusammenzuführen
-a. git add . b. git commit -m "merge branch" c. git push
+
+a. git add . 
+b. git commit -m "merge branch" 
+c. git push
+
 git branch -d BurgerMenu -> Löscht den branch
 Commits zurück gehen
 
