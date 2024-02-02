@@ -1,6 +1,6 @@
 function checkAirQuality() {
   const sliderValueInput = document.querySelector("#sliderValueInput").value;
-  let airQualityNumber = document.querySelector("#airQualityPercent");
+  let airQualityNumber = Number(document.querySelector("#airQualityPercent"));
   const resultHealth = document.querySelector("#healthConcern");
   const resultEffect = document.querySelector("#healthEffect");
   const bgColor = document.querySelector("body");
@@ -18,5 +18,7 @@ function checkAirQuality() {
     resultHealth.innerHTML = "Unhealthy for sensitive groups";
     resultEffect.innerHTML = "General Public not likely affected";
     bgColor.style.backgroundColor = "#ff0000";
+  } else {
+    console.log("something went wrong");
   }
 }
