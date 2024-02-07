@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./kalorienrechner-style.css" />
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="kalorienrechner">
+                <h1>Kalorienrechner</h1>
+
+                <form onsubmit="calcCalories(event)">
+                    <p>Körpergröße</p>
+                    <input type="text" name="calcvalues" id="heightInput" />
+                    <p>Alter</p>
+                    <input type="text" name="calcvalues" id="ageInput" />
+                    <p>Gewicht</p>
+                    <input type="text" name="calcvalues" id="weightInput" />
+                    <br />
+                    <!-- Radio Buttons-->
+                    <input type="radio" name="gender" id="female" checked />
+                    <label for="female">Weiblich</label>
+                    <input type="radio" name="gender" id="male" />
+                    <label for="male">Männlich</label>
+                    <!-- Radio Buttons End-->
+                    <br />
+                    <select name="activity" id="activityPAL">
+                        <option value="1.2">Nur Sitzen oder Liegen</option>
+                        <option value="1.5">Ausschließlich sitzende Tätigkeit, zB Büroarbeit</option>
+                        <option value="1.7">Sitzende Tätigkeit mit abwechselnd gehen&stehen (Studis)</option>
+                        <option value="1.9">Überwiegend gehende/stehende Tätigkeit (Kellner,Handwerker)</option>
+                        <option value="2.2">Körperlich anstrengende Arbeit</option>
+                    </select>
+                    <!-- Mein ansatz
+                    <input type="button" value="Berechnen" onclick="calcCalories()" />>
+                    -->
+                    <input type="submit" value="Submit" onsubmit="calcCalories(event)" />
+                </form>
+                <div class="table_component" role="region" tabindex="0">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>kcal</th>
+                                <th>kJ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grundumsatz</td>
+                                <td id="kcalGrundumsatzOutput"></td>
+                                <td id="kJGrundumsatzOutput"></td>
+                            </tr>
+                            <tr>
+                                <td>Gesamtumsatz</td>
+                                <td id="kcalGesamtumsatzOutput"></td>
+                                <td id="kJGesamtumsatzOutput"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./kalorienrechner-main.js"></script>
+    </body>
+</html>
