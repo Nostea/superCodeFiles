@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mehrwehrtsteuer Rechner</title>
-        <link rel="stylesheet" href="./MehrwertsteuerRechner-style.css" />
-    </head>
-    <body>
-        <div class="body-wrapper">
-            <div class="wrapper">
-                <h1>Mehrwertsteuer Rechner</h1>
-                <form>
-                    <div class="bg-box">
-                        <label for="netto-brutto" class="linebreak">Was soll berechnet werden?</label>
-                        <input type="radio" name="berechnungStyle" id="netto-brutto" value="0" onchange="changeText()" checked />
-                        <label for="netto-brutto">Netto-> Brutto</label>
-                        <input type="radio" name="berechnungStyle" value="1" id="brutto-netto" onchange="changeText()" />
-                        <label for="brutto-netto">Brutto-> Netto</label>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehrwehrtsteuer Rechner</title>
+    <link rel="stylesheet" href="./MehrwertsteuerRechner-style.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="wrapper">
+        <h1>Mehrwertsteuer Rechner</h1>
+        <form>
+          <div class="bg-box">
+            <label for="netto-brutto" class="linebreak">Was soll berechnet werden?</label>
+            <input type="radio" name="berechnungStyle" id="netto-brutto" value="0" onchange="changeText()" checked />
+            <label for="netto-brutto">Netto-> Brutto</label>
+            <input type="radio" name="berechnungStyle" value="1" id="brutto-netto" onchange="changeText()" />
+            <label for="brutto-netto">Brutto-> Netto</label>
+          </div>
 
-                    <!--   Mehrwertsteuersatz in %    -->
-                    <div class="bg-box">
-                        <label for="steuersatz" class="linebreak">Mehrwertsteuersatz</label>
+          <!--   Mehrwertsteuersatz in %    -->
+          <div class="bg-box">
+            <label for="steuersatz" class="linebreak">Mehrwertsteuersatz</label>
 
-                        <input type="radio" name="prozent" id="steuersatz19" value="0.19" checked />
-                        <label for="steuersatz19">19%</label>
-                        <input type="radio" name="prozent" id="steuersatz7" value="0.07" />
-                        <label for="steuersatz7">7%</label>
-                    </div>
+            <input type="radio" name="prozent" id="steuersatz19" value="0.19" checked />
+            <label for="steuersatz19">19%</label>
+            <input type="radio" name="prozent" id="steuersatz7" value="0.07" />
+            <label for="steuersatz7">7%</label>
+          </div>
 
-                    <div class="bg-box">
-                        <!--    Eingabebetrag   -->
-                        <label for="input-betrag" id="betrag-text">Nettobetrag (Preis inklusive Mehrwertsteuer) in Euro</label>
-                        <input type="text" name="input-betrag" id="input-betrag" required />
+          <div class="bg-box">
+            <!--    Eingabebetrag   -->
+            <label for="input-betrag" id="betrag-text">Nettobetrag (Preis inklusive Mehrwertsteuer) in Euro</label>
+            <input type="text" name="input-betrag" id="input-betrag" required />
 
-                        <input type="button" value="Berechnen" onclick="calcTax()" />
-                    </div>
-                    <hr />
+            <input type="button" value="Berechnen" onclick="calcTax()" />
+          </div>
+          <hr />
 
-                    <h2>Ergebnis</h2>
-                    <div class="bg-box">
-                        <label for="textMehrwert">Mehrwertsteuerbetrag</label>
-                        <p id="outputMehrwertsteuerbetrag">€</p>
-                    </div>
+          <h2>Ergebnis</h2>
+          <div class="bg-box">
+            <label for="textMehrwert">Mehrwertsteuerbetrag</label>
+            <p id="outputMehrwertsteuerbetrag">€</p>
+          </div>
 
-                    <div class="bg-box">
-                        <label for="textEndpreis" id="outputpreisLabel">Bruttobetrag (Endpreis)</label>
-                        <p id="outputEndpreis">€</p>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <script src="./MehrwertsteuerRechner-main.js"></script>
-    </body>
+          <div class="bg-box">
+            <label for="textEndpreis" id="outputpreisLabel">Bruttobetrag (Endpreis)</label>
+            <p id="outputEndpreis">€</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./MehrwertsteuerRechner-main.js"></script>
+  </body>
 </html>
