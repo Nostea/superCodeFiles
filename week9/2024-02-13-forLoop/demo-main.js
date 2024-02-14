@@ -130,7 +130,7 @@ console.clear();
 let colors = ["green", "red", "blue", "black"];
 
 // i = index (frei wählbar)
-// colores = der array name
+// colors = der array name
 for (let i of colors) {
   console.log(i);
 }
