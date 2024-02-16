@@ -1,0 +1,10 @@
+section {
+  max-width: 60vw;
+  max-height: 60vh;
+  background-color: rgb(244, 244, 244);
+  padding: 2vw;
+}
+
+img {
+  max-width: 100%;
+}

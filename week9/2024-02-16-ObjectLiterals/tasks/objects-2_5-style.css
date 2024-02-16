@@ -1,0 +1,30 @@
+table.musicTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ffffff;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.musicTable td,
+table.musicTable th {
+  border: 0px solid #ffffff;
+  padding: 6px 20px;
+}
+table.musicTable tbody td {
+  font-size: 16px;
+}
+table.musicTable tr:nth-child(even) {
+  background: #f5f5f5;
+}
+table.musicTable thead {
+  border-bottom: 5px solid #ffffff;
+}
+table.musicTable thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  border-left: 2px solid #ffffff;
+}
+table.musicTable thead th:first-child {
+  border-left: none;
+}
