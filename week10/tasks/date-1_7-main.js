@@ -1,13 +1,11 @@
-const weekendChecker = (y, m, d) => {
-  const userDay = new Date(y, m, d);
-  if (userDay.getDay() <= 5) {
-    return console.log("Working");
-  } else {
-    return console.log("Weekend");
-  }
+const weekendChecker = (date) => {
+  const newDate = new Date(date);
+  const day = newDate.getDay();
+
+  return day === 0 || day === 6 ? "Weekend" : "Arbeitstag";
 };
 
-weekendChecker(2019, 12, 15);
-weekendChecker(2001, 2, 16);
-weekendChecker(2020, 2, 1);
-weekendChecker(2001, 2, 29);
+console.log(weekendChecker("12.15.2019"));
+console.log(weekendChecker("2.16.2001"));
+console.log(weekendChecker("2.1.2020"));
+console.log(weekendChecker("2.29.2020"));
