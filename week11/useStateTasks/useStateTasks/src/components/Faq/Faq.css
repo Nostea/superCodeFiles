@@ -1,0 +1,31 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  background-color: black;
+  color: white;
+  padding: 1vh 2vw;
+  margin-bottom: 4vh;
+}
+
+.questionArea button {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+}
+
+.questionArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.show {
+  display: none;
+}

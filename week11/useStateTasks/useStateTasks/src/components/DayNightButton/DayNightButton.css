@@ -1,0 +1,8 @@
+.dark {
+  background-color: rgb(55, 109, 82);
+  color: white;
+}
+
+.dark button {
+  border-color: white;
+}
