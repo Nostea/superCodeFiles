@@ -191,8 +191,7 @@ startButton.addEventListener("click", () => {
   // Holt uns den output
   coutdownDisplay.innerHTML = inputVal;
 
-  // Erstellt eine intavall mit dem Name intervallTimer was alle 1000ms ausgeführ wird
-  const intervalTimer = setInterval(() => {
+  const myTimingFunction =  () => {
     // Hier wird dann immer ein runtergezählt
     inputVal--;
 
@@ -204,5 +203,8 @@ startButton.addEventListener("click", () => {
       clearInterval(intervalTimer);
       coutdownDisplay.innerHTML = "Finito Freunde";
     }
-  }, 1000);
+  }
+
+  // Erstellt eine intavall mit dem Name intervallTimer was alle 1000ms ausgeführ wird
+  setInterval(myTimingFunction, 1000);
 });
