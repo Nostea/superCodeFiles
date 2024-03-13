@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 2rem;
+  font-weight: 500;
+}
